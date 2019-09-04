@@ -6,16 +6,16 @@
 * {
   box-sizing: border-box;
 }
-img{height:300px; width: 50%}
+
 body{
-  background-color: hsl(0, 20%, 50%)
+  background-image: linear-gradient(dodgerblue, lightgrey)
 }
 
 
 .header {
   padding: 15px;
   text-align: center;
-  background: hsl(0, 60%, 50%);
+  background-image: linear-gradient(-90deg, lightgrey, blue, lightgrey);
   border: 2px solid black;
   border-radius: 25px;
 }
@@ -27,24 +27,26 @@ body{
 
 .column{
   font-size:16px;
-  border: 2px solid lightgrey;
+  border: 2px solid grey;
   margin-top: 20px;
   margin-bottom: 20px;
   margin-right: 250px;
   margin-left: 250px;
   text-align:justify;
   padding:15px;
-  background:hsl(0, 40%, 50%);
+  background:lightblue;
   padding-right:20px;
   padding-top:20px
   padding-bottom:20px;
   padding-left:20px;
   border-radius: 25px;
+  border-style: inset;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
 }
 
 .topnav {
   overflow: hidden;
-  background-color: tomato;
+  background-color: lightblue;
   border-radius: 25px;
   border: solid black;
 }
@@ -57,26 +59,27 @@ body{
   text-align: center;
   padding: 14px 16px;
   text-decoration:none;
-  background:tomato;
+  background:lightblue;
   font-size:20px;
 }
 
 .header-border{
-  border: 2px double lightgrey;
+  border: 2px double black;
   margin-top: 20px;
   margin-bottom: 20px;
   margin-right: 500px;
   margin-left: 500px;
   padding-top:0px;
-  background:hsl(0, 50%, 50%);
-  border-radius:25px
-
+  border-radius:25px;
+  background-image: linear-gradient(lightgrey, dodgerblue, lightgrey);
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
 }
+
 .footer{
 
 }
 .topnav a:hover {
-  background-color: red;
+  background-color: dodgerblue;
   color: black;
 }
 .column-header{
@@ -90,8 +93,42 @@ margin-top:0px;
     float: none;
     width: 100%;
   }
+  .header{
+    float: none;
+    width: 100%;
+  }
+  .header-border{
+    float: none;
+    width: 100%;s
+  }
 }
 
+.img{
+  position: relative;
+  -moz-box-shadow: 1px 2px 4px rgba(0, 0, 0,0.5);
+  -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+  padding: 10px;
+  background: white;
+}
+img{
+  width: 100%;
+  border: 1px solid #8a4419;
+  border-style: inset;
+}
+
+img:after{
+  content: '';
+  position: absolute;
+  z-index: -1;
+  -webkit-box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+  width: 70%;
+  left: 15%;
+  height: 100px;
+  bottom: 0;
+}
 </style>
 
 </head>
@@ -149,7 +186,9 @@ margin-top:0px;
 
               <strong>Example: </strong>
               <p> </p>
+              <div class ="img">
               <img src="https://github.com/CMoreno04/CMoreno04.github.io/blob/master/Screen%20Shot%202019-09-02%20at%2012.25.13.png?raw=true"/>
+              </div>
               </div>
 
       <div class="column">
@@ -164,4 +203,3 @@ margin-top:0px;
 </div>
 </body>
 </html>
-z
