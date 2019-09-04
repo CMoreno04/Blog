@@ -1,9 +1,137 @@
 <!DOCTYPE html>
-<html >
-  <head>
-    <title>Interest</title>
-  </head>
-  <body>
-    <p>Test</p>
-  </body>
+<html>
+<head>
+  <title>Interest</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body{
+  background-image: linear-gradient(dodgerblue, lightgrey)
+}
+
+
+.header {
+  padding: 15px;
+  text-align: center;
+  background-image: linear-gradient(-90deg, lightgrey, blue, lightgrey);
+  border: 2px solid black;
+  border-radius: 25px;
+}
+
+.header h1 {
+  font-size: 100px;
+  color: black;
+}
+
+.column{
+  font-size:16px;
+  border: 2px solid grey;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 250px;
+  margin-left: 250px;
+  text-align:justify;
+  padding:15px;
+  background:lightblue;
+  padding-right:20px;
+  padding-top:20px
+  padding-bottom:20px;
+  padding-left:20px;
+  border-radius: 25px;
+  border-style: inset;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: lightblue;
+  border-radius: 25px;
+  border: solid black;
+}
+
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration:none;
+  background:lightblue;
+  font-size:20px;
+}
+
+.header-border{
+  border: 2px double black;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 500px;
+  margin-left: 500px;
+  padding-top:0px;
+  border-radius:25px;
+  background-image: linear-gradient(lightgrey, dodgerblue, lightgrey);
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+}
+
+.footer{
+
+}
+.topnav a:hover {
+  background-color: dodgerblue;
+  color: black;
+}
+.column-header{
+text-align:center;
+font-size: 45px;
+margin-top:0px;
+}
+
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+  .header{
+    float: none;
+    width: 100%;
+  }
+  .header-border{
+    float: none;
+    width: 100%;s
+  }
+
+
+
+
+
+
+</style>
+
+</head>
+<body>
+
+<div class="header">
+  <div class="header-border">
+  <h1>#TheBlog</h1>
+  </div>
+</div>
+
+<div class="topnav">
+  <a href="index.html"><strong>Blog</strong></a>
+  <a href="Know_Me.html"><strong>Know Me</strong></a>
+  <a href="interest.html"><strong>Interests</strong></a>
+  <a href="https://github.com/CMoreno04" style="float:right"><strong>My GitHub</strong></a>
+</div>
+
+<div class="column-header">
+  <h2>Interests</h2>
+</div>
+
+  <div class="column">
+
+
+  </div>
+</body>
 </html>
